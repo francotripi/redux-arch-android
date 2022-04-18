@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface MoviesApi {
     @GET("Top250Movies/k_jkygze98")
-    suspend fun getMovies(): Response<MoviesDto>
+    suspend fun getMovies(): Response<Movies>
 }
