@@ -15,8 +15,14 @@ import com.example.reduxarchapp.redux.AppState
 import com.example.reduxarchapp.redux.store
 import com.example.reduxarchapp.ui.composables.MovieList
 import com.example.reduxarchapp.ui.theme.ReduxArchAppTheme
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    @Inject
+    lateinit var moviesService: MoviesService
 
     private lateinit var state: MutableState<AppState>
 
@@ -36,6 +42,6 @@ class MainActivity : ComponentActivity() {
             state.value = store.state
         }
 
-        MoviesService().getMovies()
+        moviesService.getMovies()
     }
 }
