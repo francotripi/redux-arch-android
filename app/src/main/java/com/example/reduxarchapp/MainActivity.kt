@@ -42,6 +42,6 @@ class MainActivity : ComponentActivity() {
             state.value = store.state
         }
 
-        moviesService.getMovies()
+        moviesService.getTop250Movies()
     }
 }

@@ -2,5 +2,5 @@ package com.example.reduxarchapp.data
 
 interface MoviesService {
 
-    fun getMovies()
+    fun getTop250Movies()
 }

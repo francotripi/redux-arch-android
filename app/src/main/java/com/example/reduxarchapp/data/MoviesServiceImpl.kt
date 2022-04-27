@@ -6,8 +6,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Inject
 import kotlin.coroutines.CoroutineContext
 
@@ -18,9 +16,9 @@ class MoviesServiceImpl @Inject constructor(
     override val coroutineContext: CoroutineContext
         get() = Dispatchers.IO + SupervisorJob()
 
-    override fun getMovies() {
+    override fun getTop250Movies() {
         launch {
-            val call = moviesApi.getMovies()
+            val call = moviesApi.getTop250Movies()
             if (call.isSuccessful) {
                 store.dispatch(Actions.FetchingMoviesSuccess(items = call.body()?.items.orEmpty()))
             } else {
