@@ -1,4 +1,4 @@
-package com.example.reduxarchapp.ui.theme
+package com.example.reduxarchapp.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

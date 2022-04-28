@@ -1,4 +1,4 @@
-package com.example.reduxarchapp.ui.theme
+package com.example.reduxarchapp.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

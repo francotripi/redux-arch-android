@@ -1,4 +1,4 @@
-package com.example.reduxarchapp.network
+package com.example.reduxarchapp.data.network
 
 import dagger.Module
 import dagger.Provides

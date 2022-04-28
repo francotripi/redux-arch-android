@@ -1,6 +1,7 @@
 package com.example.reduxarchapp.data
 
+
 interface MoviesService {
 
-    fun getTop250Movies()
+    suspend fun getTop250Movies()
 }
