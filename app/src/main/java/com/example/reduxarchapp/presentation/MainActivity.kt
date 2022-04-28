@@ -15,6 +15,7 @@ import com.example.reduxarchapp.redux.AppState
 import com.example.reduxarchapp.redux.store
 import com.example.reduxarchapp.presentation.ui.composables.MovieList
 import com.example.reduxarchapp.presentation.ui.theme.ReduxArchAppTheme
+import com.example.reduxarchapp.redux.reducer
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
